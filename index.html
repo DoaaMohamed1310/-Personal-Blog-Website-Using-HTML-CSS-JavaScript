@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Blog</title>
+        <!-- render element normaly -->
+        <link rel="stylesheet" href="style/normalize.css">
+        <!-- font awesome libaray -->
+        <link rel="stylesheet" href="style/all.min.css">
+        <!-- line icon -->
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <!-- file css -->
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poetsen+One&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="image/logo.svg"></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="#"><img src="image/logo.svg"></a></h5>
+                    <span data-bs-theme="dark">
+                      <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+                    </span>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#topics">Topics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#featured-post">Featured Post</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Recent">Recent Post</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                    <div class="offcanvas-header bord">
+                      <div class="profile d-flex gap-2">
+                        <img src="image/author-1.png" alt="profile">
+                        <div class="profile-text">
+                          <h4>Hello Doaa!</h4>
+                          <p>You have 3 new massage</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offcanvas-header">
+                        <div class="links d-flex p-10">
+                          <div class="left" >
+                            <a href="#">profile</a>
+                            <a href="#">Articles Saved</a>
+                            <a href="#">Add New Post</a>
+                          </div>
+                          <div class="right ms-5">
+                            <a href="#">My Likes</a>
+                            <a href="#">Account Setting</a>
+                            <a href="#">Sign Out</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="offcanvas-header bord">
+                      <p class="mt-3 footer">Copyright 2024 &copy; Wren:Personal Blog Website Developed by Doaa</p>
+                  </div>
+                  </div>
+                  
+                </div>
+                  <div class="d-flex gap-3">
+                    <a class="btn btn-outline-success" href="#">subscribe</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                      <i class="fa-solid fa-bars"></i>
+                    </button>
+                  </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!--start landing -->
+        <div class="landing mb-5" id="landing">
+          <div class="container mt-5">
+            <span class="top"><i class="fa-solid fa-arrow-up"></i></span>
+            <div class="profile">
+              <div class="landing-text">
+                <img src="image/shadow-2.svg">
+                <span class="mb-4 d-block">Hello Everyone!</span>
+                <h1 class="mt-5 fw-bold mb-3">I'm <span>Wren Clark</span></h1>
+                <p class="">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every
+                  interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
+                </p>
+                <div class="input-wrapper mt-3">
+                  <input type="email" name="email_address" placeholder="Type your email address" required
+                    class="input-field" autocomplete="off">
+                  <button class="btn btn-primary">
+                    <span class="span">Subscribe</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="landing-img">
+                <img src="image/hero-banner.png" alt="author image">
+                <i class="fa fa-close"></i>
+                <span class="circle"></span>
+              </div>
+            </div>
+            <div class="topics" id="topics">
+              <div class="topics-text">
+                <h3>Hot topics</h3>
+                <p>Don't miss out on the latest news about Travel tips, Hotels review, Food guide...</p>
+                <div>
+                  <i class="fa fa-arrow-left" id="left"></i>
+                  <i class="fa fa-arrow-right" id="right"></i>
+                </div>
+              </div>
+              <div class="img-galay">
+                <ul class="carousal">
+                  <li class="box-img">
+                    <div class="img-url"><img src="image/topic-1.png"></div>
+                    <div class="img-text">
+                      <h5>Sport</h5>
+                      <p>38 Articles</p>
+                    </div>
+                  </li>
+                  <li class="box-img">
+                    <div class="img-url"><img src="image/topic-2.png"></div>
+                    <div class="img-text">
+                      <h5>Travel</h5>
+                      <p>63 Articles</p>
+                    </div>
+                  </li>
+                  <li class="box-img">
+                    <div class="img-url"><img src="image/topic-3.png"></div>
+                    <div class="img-text">
+                      <h5>Design</h5>
+                      <p>78 Articles</p>
+                    </div>
+                  </li>
+                  <li class="box-img">
+                    <div class="img-url"><img src="image/topic-4.png"></div>
+                    <div class="img-text">
+                      <h5>Movie</h5>
+                      <p>125 Articles</p>
+                    </div>
+                  </li>
+                  <li class="box-img">
+                    <div class="img-url"><img src="image/topic-5.png"></div>
+                    <div class="img-text">
+                      <h5>Lifestyle</h5>
+                      <p>78 Articles</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end landing -->
+        <!--start FEATURED POST -->
+        <div class="featured-post mb-5" id="featured-post">
+          <div class="container">
+            <div class="featured-head mb-5">
+              <h2><span>Editor's picked</span></h2>
+              <p>Featured and highly rated articles</p>
+            </div>
+            <div class="featured-posts-top">
+              <div class="featured-box">
+                <div class="featured-images"><img src="image/featured-1.png"></div>
+                <div class="featured-times">
+                  <div><span>#Travel</span> <span>#Lifestyle</span></div>
+                  <span><i class="fa-solid fa-clock"></i> 3 mins read </span>
+                </div>
+                <p>Self-observation is the first step of inner unfolding</p>
+                <div class="featured-footer">
+                  <div class="featured-footer-box">
+                    <img src="image/author-1.png">
+                    <div>
+                      <h5>Joseph</h5>
+                      <p>25 Nov 2022</p>
+                    </div>
+                  </div>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+              <div class="featured-box">
+                <div class="featured-images"><img src="image/featured-2.png"></div>
+                <div class="featured-times">
+                  <div><span>#Design</span> <span>#Movie</span></div>
+                  <span><i class="fa-solid fa-clock"></i>  6 mins read </span>
+                </div>
+                <p>Self-observation is the first step of inner unfolding</p>
+                <div class="featured-footer">
+                  <div class="featured-footer-box">
+                    <img src="image/author-1.png">
+                    <div>
+                      <h5>Joseph</h5>
+                      <p>25 Nov 2022</p>
+                    </div>
+                  </div>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="featured-posts-bottom mb-4">
+              <div class="featured-box">
+                <div class="featured-images"><img src="image/featured-3.png"></div>
+                <div class="featured-times">
+                  <div><span>#Design</span> <span>#Movie</span></div>
+                  <span><i class="fa-solid fa-clock"></i>  6 mins read </span>
+                </div>
+                <p>Self-observation is the first step of inner unfolding</p>
+                <div class="featured-footer">
+                  <div class="featured-footer-box">
+                    <img src="image/author-1.png">
+                    <div>
+                      <h5>Joseph</h5>
+                      <p>25 Nov 2022</p>
+                    </div>
+                  </div>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+              <div class="featured-box">
+                <div class="featured-images"><img src="image/featured-4.png"></div>
+                <div class="featured-times">
+                  <div><span>#Design</span> <span>#Movie</span></div>
+                  <span><i class="fa-solid fa-clock"></i>  6 mins read </span>
+                </div>
+                <p>Self-observation is the first step of inner unfolding</p>
+                <div class="featured-footer">
+                  <div class="featured-footer-box">
+                    <img src="image/author-1.png">
+                    <div>
+                      <h5>Joseph</h5>
+                      <p>25 Nov 2022</p>
+                    </div>
+                  </div>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+              <div class="featured-box">
+                <div class="featured-images"><img src="image/featured-5.png"></div>
+                <div class="featured-times">
+                  <div><span>#Design</span> <span>#Movie</span></div>
+                  <span><i class="fa-solid fa-clock"></i>  6 mins read </span>
+                </div>
+                <p>Self-observation is the first step of inner unfolding</p>
+                <div class="featured-footer">
+                  <div class="featured-footer-box">
+                    <img src="image/author-1.png">
+                    <div>
+                      <h5>Joseph</h5>
+                      <p>25 Nov 2022</p>
+                    </div>
+                  </div>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary">
+              <span class="span">Show More Posts</span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <!--end FEATURED POST -->
+        <!--start Popular Tags -->
+        <div class="Popular-Tags mt-5 mb-5">
+          <div class="container">
+            <div class="Popular-head mb-5">
+              <h2><span>Popular Tags</span></h2>
+              <p>Most searched keywords</p>
+            </div>
+            <div class="tags">
+              <div class="tags-top">
+                <div class="tags-box">
+                  <img src="image/tag1.png" alt="tags">
+                  <span>Travel</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag2.png" alt="tags">
+                  <span>Culture</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag3.png" alt="tags">
+                  <span>Lifestyle</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag4.png" alt="tags">
+                  <span>Fashion</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag5.png" alt="tags">
+                  <span>Food</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag6.png" alt="tags">
+                  <span>Space</span>
+                </div>
+              </div>
+              <div class="tags-top">
+                <div class="tags-box">
+                  <img src="image/tag7.png" alt="tags">
+                  <span>Animal</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag8.png" alt="tags">
+                  <span>Minimal</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag9.png" alt="tags">
+                  <span>Interior</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag10.png" alt="tags">
+                  <span>Plant</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag11.png" alt="tags">
+                  <span>Nature</span>
+                </div>
+                <div class="tags-box">
+                  <img src="image/tag12.png" alt="tags">
+                  <span>Business</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--end Popular Tags -->
+        <!-- start recent postes -->
+          <div class="recent-posts mb-5" id="Recent">
+            <div class="container">
+              <div class="recent-posts-head">
+                <div class="recent-body mb-5">
+                  <h2><span>Recent posts</span></h2>
+                  <p>Don't miss the latest trends</p>
+                </div>
+                <div class="recent-boxs">
+                  <div class="box">
+                    <img src="image/recent-post-1.jpg" alt = "Helpful Tips for Working from Home as a Freelancer">
+                    <div class="box-text">
+                      <span class="work">Working Tips</span>
+                      <h3>Helpful Tips for Working from Home as a Freelancer</h3>
+                      <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                      <div class="box-time">
+                        <div><span>#Travel</span> <span>#Lifestyle</span></div>
+                        <span><i class="fa-solid fa-clock"></i> 3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <img src="image/recent-post-2.jpg" alt = "Helpful Tips for Working from Home as a Freelancer">
+                    <div class="box-text">
+                      <span class="work">Working Tips</span>
+                      <h3>Helpful Tips for Working from Home as a Freelancer</h3>
+                      <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                      <div class="box-time">
+                        <div><span>#Travel</span> <span>#Lifestyle</span></div>
+                        <span><i class="fa-solid fa-clock"></i> 3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <img src="image/recent-post-3.jpg" alt = "Helpful Tips for Working from Home as a Freelancer">
+                    <div class="box-text">
+                      <span class="work">Working Tips</span>
+                      <h3>Helpful Tips for Working from Home as a Freelancer</h3>
+                      <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                      <div class="box-time">
+                        <div><span>#Travel</span> <span>#Lifestyle</span></div>
+                        <span><i class="fa-solid fa-clock"></i> 3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <img src="image/recent-post-4.jpg" alt = "Helpful Tips for Working from Home as a Freelancer">
+                    <div class="box-text">
+                      <span class="work">Working Tips</span>
+                      <h3>Helpful Tips for Working from Home as a Freelancer</h3>
+                      <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                      <div class="box-time">
+                        <div><span>#Travel</span> <span>#Lifestyle</span></div>
+                        <span><i class="fa-solid fa-clock"></i> 3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <img src="image/recent-post-5.jpg" alt = "Helpful Tips for Working from Home as a Freelancer">
+                    <div class="box-text">
+                      <span class="work">Working Tips</span>
+                      <h3>Helpful Tips for Working from Home as a Freelancer</h3>
+                      <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                      <div class="box-time">
+                        <div><span>#Travel</span> <span>#Lifestyle</span></div>
+                        <span><i class="fa-solid fa-clock"></i> 3 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                    <ul class="slide">
+                      <li class="page-item">
+                        <i class="fa fa-arrow-left"></i>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item">
+                        <i class="fa fa-arrow-right"></i>
+                        
+                      </li>
+                    </ul>
+                  
+                </div>
+
+              </div>
+              <div class="popular-postes">
+                <div class="popular-top mb-3">
+                  <div class="popular-postes-head mb-5">
+                    <span>Popular Posts</span>
+                  </div>
+                  <div class="popular-boxs">
+                    <div class="box">
+                      <img src="image/popular-post-1.jpg" alt="">
+                      <div class="text bord">
+                        <h4>Creating is a privilege but it’s also a gift</h4>
+                        <div>
+                          <span>15 mins read</span>
+                          <span>15 April 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <img src="image/popular-post-2.jpg" alt="">
+                      <div class="text bord">
+                        <h4>Being unique is better than being perfect</h4>
+                        <div>
+                          <span>15 mins read</span>
+                          <span>15 April 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <img src="image/popular-post-3.jpg" alt="">
+                      <div class="text bord">
+                        <h4>Every day, in every city and town across the country</h4>
+                        <div>
+                          <span>15 mins read</span>
+                          <span>15 April 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <img src="image/popular-post-4.jpg" alt="">
+                      <div class="text bord">
+                        <h4>Your voice, your mind, your story, your vision</h4>
+                        <div>
+                          <span>15 mins read</span>
+                          <span>15 April 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <img src="image/popular-post-2.jpg" alt="">
+                      <div class="text">
+                        <h4>Being unique is better than being perfect</h4>
+                        <div>
+                          <span>15 mins read</span>
+                          <span>15 April 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="popular-center">
+                  <div class="popular-postes-head mb-5">
+                    <span>Last Comment</span>
+                  </div>
+                  <div class="center-box">
+                    <p>“ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner “</p>
+                    <div class="center-text">
+                      <img src="image/author-6.png">
+                      <div>
+                        <span>Jane Cooper</span>
+                        <span>15 April 2022</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center-box">
+                    <p>“ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner “</p>
+                    <div class="center-text">
+                      <img src="image/author-7.png">
+                      <div>
+                        <span>Katen Doe</span>
+                        <span>15 April 2022</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center-box">
+                    <p>“ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner “</p>
+                    <div class="center-text">
+                      <img src="image/author-8.png">
+                      <div>
+                        <span>Barbara Cartland</span>
+                        <span>15 April 2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular-bottom mt-3">
+                  <div class="popular-postes-head mb-4">
+                    <img src="image/logo.svg" alt = "insta post">
+                    <p>Follow us on instagram</p>
+                  </div>
+                  <div class="img-galary  mb-4">
+                    <img src="image/insta-post-1.png">
+                    <img src="image/insta-post-2.png">
+                    <img src="image/insta-post-3.png">
+                    <img src="image/insta-post-4.png">
+                    <img src="image/insta-post-5.png">
+                    <img src="image/insta-post-6.png">
+                    <img src="image/insta-post-7.png">
+                    <img src="image/insta-post-8.png">
+                    <img src="image/insta-post-9.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- end recent postes -->
+        <!-- start footer -->
+        <div class="footer mt-5 mb-5" id="contact">
+          <div class="container">
+            <div class="footer-content">
+              <div class="box-text">
+                <img src="image/logo.svg">
+                <p>When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an unknown prnoto sans took a galley and scrambled it to five centurie.</p>
+                <div>
+                  <h4>Address</h4>
+                  <span>123 Main Street</span>
+                  <span>New York, NY 10001</span>
+                </div>
+              </div>
+              <div class="box-Categories">
+                <h4>Categories</h4>
+                <ul>
+                  <li>Action</li>
+                  <li>Business</li>
+                  <li>Adventure</li>
+                  <li>Canada</li>
+                  <li>America</li>
+                  <li>Curiosity</li>
+                  <li>Animal</li>
+                  <li>Dental</li>
+                  <li>Biology</li>
+                  <li>Design</li>
+                  <li>Breakfast</li>
+                  <li>Dessert</li>
+                </ul>
+              </div>
+              <div class="box-Newsletter">
+                <h4>Newsletter</h4>
+                <p>Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.</p>
+                <div class="form-input">
+                  <div>
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Your name">
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Email address">
+                  </div>
+                  <button class="btn">
+                    subscribe
+                    <i class="fa fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="footer-icons">
+              <p>&copy; Developed by <a href="https://www.facebook.com/?locale=ar_AR">Doaa</a></p>
+              <div>
+                <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end footer -->
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
