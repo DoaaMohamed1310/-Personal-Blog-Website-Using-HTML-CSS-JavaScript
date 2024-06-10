@@ -774,7 +774,6 @@ button:hover i {
     padding: 10px;
     background-color: var(--bg-prussian-blue);
     border-radius:50% ;
-    font-size: 30px;
     color: var(--bg-carolina-blue);
     bottom:5%;
     right:20px;
