@@ -15,10 +15,10 @@ function stickyNav() {
     var scrollValue = window.scrollY;    
     if (scrollValue > headerHeight) {
         navbar.classList.add("header-sticky");
-        arrowGalaryTop.style.visibility="visible"
+        arrowGalaryTop.style.opacity=1
     } else if (scrollValue < headerHeight) {
         navbar.classList.remove("header-sticky");
-        arrowGalaryTop.style.visibility="hidden"
+        arrowGalaryTop.style.opacity=0
 
     }
 }
