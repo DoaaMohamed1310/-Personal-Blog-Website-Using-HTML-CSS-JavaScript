@@ -776,10 +776,9 @@ button:hover i {
     border-radius:50% ;
     font-size: 30px;
     color: var(--bg-carolina-blue);
-    position: absolute;
     bottom:5%;
     right:20px;
-    visibility: hidden;
+    opacity: 0;
     z-index: 111;
     transition: .5s;
     position: fixed;
