@@ -742,10 +742,17 @@ button:hover i {
 }
 .footer .container  .footer-icons{
     margin-top: 50px;
-    display: grid;
-    padding: 40px;
-    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
+}
+@media (max-width:550px) {
+    .footer .container  .footer-icons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .footer .container  .footer-icons p{
     font-size: 20px;
