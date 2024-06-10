@@ -670,7 +670,7 @@ button:hover i {
     }
 }
 /* start footer */
-.footer .container {
+.footer .footer-text {
     padding: 100px;
     background-color: var(--bg-oxford-blue-2);
     border-radius: 10px;
@@ -683,7 +683,7 @@ button:hover i {
     gap: 50px;
 }
 @media (max-width:550px) {
-    .footer .container{
+    .footer .footer-text{
         padding:10px;
     }
 }
